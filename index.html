@@ -33,9 +33,9 @@
 <body class="text-gray-600 font-nunito">
 
     <nav class="text-right">
-        <div class="flex items-center justify-between">
+        <div class="flex items-center justify-around">
 
-            <div class="flex items-center">
+            <div class="flex items-center justify-between">
                 <h1 class="font-bold uppercase p-2 border border-green-200">
                     <a href="/">resto</a>
                 </h1>
@@ -47,7 +47,7 @@
                 </div>
             </div>
 
-            <ul class="md:flex md:items-center block space-x-1 hidden mt-6" id="menu">
+            <ul class="md:flex md:items-center block space-x-2 hidden mt-6" id="menu">
                 <li class="font-bold text-gray-700 py-4 px-6 border-b-4 border-green-200">
                     <a href="#" class="">
                         <span>Home</span>
@@ -181,7 +181,7 @@
         <!-- About us Ends  -->
 
         <!-- Special Menu  -->
-        <div class="mt-5 bg-gray-100">
+        <div class="mt-5 bg-gray-100 p-6">
             <header>
                 <h1 class="font-bold text-gray-700 text-center text-2xl">Our Special Menu</h1>
                 <div class="md:flex items-center justify-center mt-3">
@@ -192,9 +192,9 @@
                     <button class="border-green-100 shadow-md border-1 m-1 rounded-full py-2 px-3 md:py-2 md:px-3 text-sm font-bold">Dinner</button>
                 </div>
             </header>
-            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-10 m-8 md:mt-12 md:px-18 lg:mt-12 lg:px-40">
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-10 m-8 md:px-18 mt-12 lg:px-40">
                 <!-- menu cards  -->
-                <div class="hover:shadow-lg bg-white rounded overflow-hidden shadow-lg flex flex-wrap justify-center">
+                <div class="hover:shadow-lg bg-white rounded overflow-hidden shadow-md flex flex-wrap justify-center">
                     <img src="img/pot1.png" alt="Stew" class="h-28 sm:h-48 border-none object-cover w-fit">
                     <div class="m-4">
                         <span class="font-bold text-green-400 mb-2 text-2xl">Black Pepper Crab</span>
@@ -208,7 +208,7 @@
                         <button href="#" class="bg-green-500 text-white shadow-md rounded-full py-2 px-3 text-sm font-bold cursor-pointer tracking-wider transition ease-out duration-500">Add to Cart</button>
                     </div>
                 </div>
-                <div class="hover:shadow-lg bg-green-500 rounded overflow-hidden shadow-lg flex flex-wrap justify-center">
+                <div class="hover:shadow-lg bg-green-500 rounded overflow-hidden shadow-md flex flex-wrap justify-center">
                     <img src="img/pot2.png" alt="Stew" class="max-full h-32 sm:h-48 align-middle border-none object-cover">
                     <div class="m-4">
                         <span class="font-bold text-white mb-2 text-2xl">Summer Fruit Salad</span>
@@ -223,7 +223,7 @@
                         <button href="#" class="bg-white text-green-500 shadow-md rounded-full py-2 px-3 text-sm font-bold cursor-pointer tracking-wider transition ease-out duration-500">Add to Cart</button>
                     </div>
                 </div>
-                <div class="hover:shadow-lg bg-white rounded overflow-hidden shadow-lg flex flex-wrap justify-center">
+                <div class="hover:shadow-lg bg-white rounded overflow-hidden shadow-md flex flex-wrap justify-center">
                     <img src="img/pot3.png" alt="Stew" class="max-full h-32 sm:h-48 align-middle border-none object-cover">
                     <div class="m-4">
                         <span class="font-bold text-green-400 mb-2 text-2xl">Chicken Ramen</span>
@@ -238,7 +238,7 @@
                         <button href="#" class="bg-green-500 text-white shadow-md rounded-full py-2 px-3 text-sm font-bold cursor-pointer tracking-wider transition ease-out duration-500">Add to Cart</button>
                     </div>
                 </div>
-                <div class="hover:shadow-lg bg-white rounded overflow-hidden shadow-lg flex flex-wrap justify-center">
+                <div class="hover:shadow-lg bg-white rounded overflow-hidden shadow-md flex flex-wrap justify-center">
                     <img src="img/pot4.png" alt="Stew" class="max-full h-32 sm:h-48 align-middle border-none object-cover">
                     <div class="m-4">
                         <span class="font-bold text-green-400 mb-2 text-2xl">Veggie Rotini</span>
@@ -253,7 +253,7 @@
                         <button href="#" class="bg-green-500 text-white shadow-md rounded-full py-2 px-3 text-sm font-bold cursor-pointer tracking-wider transition ease-out duration-500">Add to Cart</button>
                     </div>
                 </div>
-                <div class="hover:shadow-lg bg-white rounded overflow-hidden shadow-lg flex flex-wrap justify-center">
+                <div class="hover:shadow-lg bg-white rounded overflow-hidden shadow-md flex flex-wrap justify-center">
                     <img src="img/pot1.png" alt="Stew" class="max-full h-32 sm:h-48 align-middle border-none object-cover">
                     <div class="m-4">
                         <span class="font-bold text-green-400 mb-2 text-2xl">Meatball Scrumbled Egg</span>
@@ -268,7 +268,7 @@
                         <button href="#" class="bg-green-500 text-white shadow-md rounded-full py-2 px-3 text-sm font-bold cursor-pointer tracking-wider transition ease-out duration-500">Add to Cart</button>
                     </div>
                 </div>
-                <div class="hover:shadow-lg bg-white rounded overflow-hidden shadow-lg flex flex-wrap justify-center">
+                <div class="hover:shadow-lg bg-white rounded overflow-hidden shadow-md flex flex-wrap justify-center">
                     <img src="img/pot2.png" alt="Stew" class="max-full h-32 sm:h-48 align-middle border-none object-cover">
                     <div class="m-4">
                         <span class="font-bold text-green-400 mb-2 text-2xl">Fruit Salad</span>
@@ -283,10 +283,41 @@
                         <button href="#" class="bg-green-500 text-white shadow-md rounded-full py-2 px-3 text-sm font-bold cursor-pointer tracking-wider transition ease-out duration-500">Add to Cart</button>
                     </div>
                 </div>
-
+                <!-- menu card end  -->
+            </div>
+            <!-- pagination  -->
+            <div class="md:flex md:justify-between m-8 mt-12 sm:px-8 md:px-18 lg:px-40">
+                <div class="flex items-center space-x-2 ">
+                    <button class="bg-white text-green-500 rounded shadow-md px-4 py-2">1</button>
+                    <button class="bg-white text-green-500 rounded shadow-md px-4 py-2">2</button>
+                    <button class="bg-white text-green-500 rounded shadow-md px-4 py-2">3</button>
+                    <button class="bg-white text-green-500 rounded shadow-md px-4 py-2">4</button>
+                    <div class="m-3 text-green-600"><span>...</span></div>
+                    <button class="bg-white text-green-500 rounded shadow-md px-4 py-2">18</button>
+                    <button class="bg-white text-green-500 rounded shadow-md px-4 py-2">19</button>
+                    <button class="bg-white text-green-500 rounded shadow-md px-4 py-2">20</button>
+                </div>
+                <div class="flex items-center space-x-3 justify-center sm:mt-3">
+                    <button class="bg-green-500 text-white rounded shadow-md px-4 py-2">
+                        <svg class="w-5 text-white" xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" />
+                        </svg>
+                    </button>
+                    <button class="bg-green-500 text-white rounded shadow-md px-4 py-2">
+                        <svg class="w-5 text-white" xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+                        </svg>
+                    </button>
+                </div>
             </div>
         </div>
         <!-- Special Menu end  -->
+
+        <div class="mt-8">
+            <header>
+                <h2 class="text-center font-bold text-4xl">What Our Customer Say?</h2>
+            </header>
+        </div>
     </main>
     
 
