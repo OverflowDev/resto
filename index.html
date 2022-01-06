@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resto</title>
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+    </style>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+        theme: {
+            extend: {
+            colors: {
+                primary: '#ff6363',
+                secondary: {
+                    100: '#e2e2d5',
+                    200: '#888883',
+                }
+            },
+            fontFamily:{
+                nunito: ['Nunito']
+            }
+            }
+        }
+        }
+    </script>
+</head>
+<body class="text-gray-600 font-nunito">
+
+    <nav class="text-right">
+        <div class="max-w-7xl flex justify-between">
+
+            <div class="flex items-center md:justify-between ml-16">
+                <h1 class="font-bold uppercase p-2 border border-green-200">
+                    <a href="/">resto</a>
+                </h1>
+                <!-- menu -->
+                <div class="px-4 cursor-pointer md:hidden" id="burger">
+                    <svg class="w-6" xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" />
+                    </svg>
+                </div>
+            </div>
+
+            <ul class="md:flex items-center space-x-1 hidden " id="menu">
+                <li class="font-bold text-gray-700 py-4 px-6 border-b-4 border-green-200">
+                    <a href="#" class="">
+                        <span>Home</span>
+                    </a>
+                </li>
+                <li class="font-bold text-gray-700 py-4 px-6">
+                    <a href="#" class="">
+                        <span>Blog</span>
+                    </a>
+                </li>
+                <li class="font-bold text-gray-700 py-4 px-6">
+                    <a href="#" class="">
+                        <span>Gallery</span>
+                    </a>
+                </li>
+                <li class="font-bold text-gray-700 py-4 px-6">
+                    <a href="#" class="">
+                        <span>Menu</span>
+                    </a>
+                </li>
+                <li class="font-bold text-gray-700 py-4 px-6">
+                    <a href="#" class="">
+                        <span>About</span>
+                    </a>
+                </li>
+                <!-- <li class="font-bold text-gray-700 py-4 px-6 justify-end">
+                    <a href="#" class=" hover:bg-green-600 hover:text-white border-green-100 border-2 text-primary ml-2 rounded-full py-2 px-3 uppercase text-xs font-bold cursor-pointer tracking-wider transition ease-out duration-500">Sign UP</a>
+                </li> -->
+                <li class="py-4 px-6" id="menu">
+                    <a href="#" class=" hover:bg-green-600 hover:text-white border-green-100 border-2 text-primary ml-2 rounded-full py-2 px-3 uppercase text-xs font-bold cursor-pointer tracking-wider transition ease-out duration-500">Sign UP</a>
+                </li>
+            </ul>
+        </div>
+    </nav><!--Nav ends-->
+    
+    
+    <main class="px-20 py-6">
+        <!-- what will you like -->
+        <div class="grid md:grid-cols-1">
+            <div class="bg-green-400 md:h-full md:w-full md:rounded-br-full md:rounded-bl-full p-10 relative">
+                <div class="mx-7">
+                    <h1 class="font-bold text-white text-6xl break-normal">Provide the best food for you</h1>
+                    <p class="font-semibold text-white text-justify block text-sm break-normal ">We provide the most delicious food based on high quality ingredients that are maintained by high tech machines and cooked by our experts</p>
+                </div>
+                <!-- <div>
+                    <img src="img/pot1.png" alt="Pot" class="absolute inset-y-0 right-0 w-20 rounded overflow-hidden object-cover">
+                </div> -->
+                <div class="relative flex w-6/12 md:flex-wrap items-stretch m-5 ml-24">
+                    <input type="text" class="py-5 px-5 placeholder-lime-700 text-lime-600 relative bg-white shadow.md tracking-wide border-lime-500 md:border-1 rounded-full text-sm font-bold w-full pr-10" placeholder="What food will you like to eat?">
+                    <span class="z-10 h-full leading-snug font-normal absolute right-0 text-center bg-transparent rounded text-base items-center justify-center pr-3 py-3">
+                        <svg class="w-8" xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 16l2.879-2.879m0 0a3 3 0 104.243-4.242 3 3 0 00-4.243 4.242zM21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                        </svg>
+                    </span>
+                </div>
+
+            </div>
+        </div><!--ends-->
+
+        <!-- how to order  -->
+        <div>
+            <header class="mt-10">
+                <h2 class="text-gray-700 text-center text-5xl font-bold">How to Order</h2>
+                <p class="text-xs text-center font-semibold text-center mt-3">Follow each of this steps to order the menu you want, wait and we are ready to do it for you to be ready to enjoy</p>
+            </header>
+            <div class="grid lg:grid-cols-5 gap-5 mt-8 ">
+                <!-- card start -->
+                <div class="hover:shadow-lg bg-green-500 rounded-lg shadow-md text-white">
+                    <svg class="w-7 m-4 pt-6" xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 13h6m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
+                    </svg>
+                    <!-- text -->
+                    <div class="m-4">
+                        <span class="font-bold">Choose Menu</span>
+                        <span class="block text-sm">Select the food or drinks menu you want, please enter it into the shopping cart</span>
+                    </div>
+                </div>
+                <!-- arrow. -->
+                <div class="flex justify-center items-center">
+                    <svg class="w-10 text-white bg-green-500 rounded-full" xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+                    </svg>
+                </div>
+                <div class="hover:shadow-lg bg-white rounded-lg shadow-md">
+                    <svg class="w-7 m-4 pt-6 text-green-500" xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10" />
+                      </svg>
+                    <!-- text -->
+                    <div class="m-4">
+                        <span class="font-bold">Checkout Orders</span>
+                        <span class="block text-gray-500 text-sm">Oders in your shopping cart now just do checkout, to be raedey for processing</span>
+                    </div>
+                </div>
+                <div class="flex justify-center items-center">
+                    <svg class="w-10 text-green-500 bg-white rounded-full shadow-md" xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+                    </svg>
+                </div>
+                <div class="hover:shadow-lg bg-white rounded-lg shadow-md">
+                    <svg class="w-7 m-4 pt-6 text-green-500" xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z" />
+                    </svg>
+                    <!-- text -->
+                    <div class="m-4">
+                        <span class="font-bold">Wait for Deivery</span>
+                        <span class="block text-gray-500 text-sm">So from here we are ready to prepare and deliver orders to you residence</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- how to order ends  -->
+
+        <!-- About us -->
+        <div class="grid md:grid-cols-1 mt-24">
+            <div class="flex">
+                <div>
+                    <img src="img/pot2.png" alt="Plate" class="w-full h-32 sm:h-48 object-cover">
+                </div>
+                <div>
+                    <h3 class="text-green-500 font-bold">About Us</h3>
+                    <h1 class="font-bold block text-2xl">We Believe In Working With Accredited Chefs</h1>
+                    <p class="text-semibold text-gray-300">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aliquid sunt ad consectetur minima, non optio possimus similique autem, magni placeat commodi quam dicta officia corrupti! Delectus labore ipsam nobis! Perferendis!</p>
+                    <div class="flex justify-start mt-3">
+                        <div class="hover:shadow-inner bg-green-500 text-gray-200 hover:text-white rounded-full py-2 px-3 uppercase text-xs font-bold cursor-pointer tracking-wider transform hover:scale-90 hover:bg-opacity-60 transition ease-in duration-300">
+                            Learn more
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- About us Ends  -->
+
+        <!-- Special Menu  -->
+        <div>
+            <header>
+                <h1 class="font-bold text-gray-700 text-center text-2xl">Our Special Menu</h1>
+                <div class="flex items-center justify-center mt-3">
+                    <a href="#" class="bg-green-500 text-white border-green-100 shadow-md border-1  ml-6 rounded-full py-2 px-3 text-sm font-bold cursor-pointer tracking-wider transition ease-out duration-500">All categories</a>
+                    <a href="#" class="border-green-100 shadow-md border-1  ml-6 rounded-full py-2 px-3 text-sm font-bold cursor-pointer tracking-wider transition ease-out duration-500">Breakfast</a>
+                    <a href="#" class="border-green-100 shadow-md border-1  ml-6 rounded-full py-2 px-3 text-sm font-bold cursor-pointer tracking-wider transition ease-out duration-500">Brunch</a>
+                    <a href="#" class="border-green-100 shadow-md border-1  ml-6 rounded-full py-2 px-3 text-sm font-bold cursor-pointer tracking-wider transition ease-out duration-500">Lunch</a>
+                    <a href="#" class="border-green-100 shadow-md border-1  ml-6 rounded-full py-2 px-3 text-sm font-bold cursor-pointer tracking-wider transition ease-out duration-500">Dinner</a>
+                </div>
+            </header>
+            <div class="grid lg:grid-cols-3 gap-10 mt-8 ">
+
+            </div>
+        </div>
+        <!-- Special Menu end  -->
+    </main>
+    
+
+    <script src="index.js"></script>
+</body>
+</html>
