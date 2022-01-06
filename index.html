@@ -33,42 +33,42 @@
 <body class="text-gray-600 font-nunito">
 
     <nav class="text-right">
-        <div class="max-w-7xl flex justify-between">
+        <div class="flex items-center justify-between">
 
-            <div class="flex items-center md:justify-between ml-16">
+            <div class="flex items-center">
                 <h1 class="font-bold uppercase p-2 border border-green-200">
                     <a href="/">resto</a>
                 </h1>
                 <!-- menu -->
-                <div class="px-4 cursor-pointer md:hidden" id="burger">
+                <div class="cursor-pointer md:hidden px-4" id="burger">
                     <svg class="w-6" xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" />
                     </svg>
                 </div>
             </div>
 
-            <ul class="md:flex items-center space-x-1 hidden " id="menu">
+            <ul class="md:flex md:items-center block space-x-1 hidden mt-6" id="menu">
                 <li class="font-bold text-gray-700 py-4 px-6 border-b-4 border-green-200">
                     <a href="#" class="">
                         <span>Home</span>
                     </a>
                 </li>
-                <li class="font-bold text-gray-700 py-4 px-6">
+                <li class="font-bold text-gray-700 py-4 px-6 hover:border-b-2 hover:border-green-100">
                     <a href="#" class="">
                         <span>Blog</span>
                     </a>
                 </li>
-                <li class="font-bold text-gray-700 py-4 px-6">
+                <li class="font-bold text-gray-700 py-4 px-6 hover:border-b-2 hover:border-green-100">
                     <a href="#" class="">
                         <span>Gallery</span>
                     </a>
                 </li>
-                <li class="font-bold text-gray-700 py-4 px-6">
+                <li class="font-bold text-gray-700 py-4 px-6 hover:border-b-2 hover:border-green-100">
                     <a href="#" class="">
                         <span>Menu</span>
                     </a>
                 </li>
-                <li class="font-bold text-gray-700 py-4 px-6">
+                <li class="font-bold text-gray-700 py-4 px-6 hover:border-b-2 hover:border-green-100">
                     <a href="#" class="">
                         <span>About</span>
                     </a>
@@ -76,28 +76,28 @@
                 <!-- <li class="font-bold text-gray-700 py-4 px-6 justify-end">
                     <a href="#" class=" hover:bg-green-600 hover:text-white border-green-100 border-2 text-primary ml-2 rounded-full py-2 px-3 uppercase text-xs font-bold cursor-pointer tracking-wider transition ease-out duration-500">Sign UP</a>
                 </li> -->
-                <li class="py-4 px-6" id="menu">
-                    <a href="#" class=" hover:bg-green-600 hover:text-white border-green-100 border-2 text-primary ml-2 rounded-full py-2 px-3 uppercase text-xs font-bold cursor-pointer tracking-wider transition ease-out duration-500">Sign UP</a>
+                <li class="py-4 px-6">
+                    <a href="#" class=" hover:bg-green-600 hover:text-white border-green-100 border-2 text-primary ml-2 rounded-full py-2 px-3 uppercase text-xs font-bold cursor-pointer tracking-wider transition ease-in duration-500">Sign UP</a>
                 </li>
             </ul>
         </div>
     </nav><!--Nav ends-->
     
     
-    <main class="px-20 py-6">
+    <main class=" py-6">
         <!-- what will you like -->
         <div class="grid md:grid-cols-1">
             <div class="bg-green-400 md:h-full md:w-full md:rounded-br-full md:rounded-bl-full p-10 relative">
                 <div class="mx-7">
                     <h1 class="font-bold text-white text-6xl break-normal">Provide the best food for you</h1>
-                    <p class="font-semibold text-white text-justify block text-sm break-normal ">We provide the most delicious food based on high quality ingredients that are maintained by high tech machines and cooked by our experts</p>
+                    <p class="font-semibold text-white text-justify block text-sm break-normal mt-2">We provide the most delicious food based on high quality ingredients that are maintained by high tech machines and cooked by our experts</p>
                 </div>
                 <!-- <div>
                     <img src="img/pot1.png" alt="Pot" class="absolute inset-y-0 right-0 w-20 rounded overflow-hidden object-cover">
                 </div> -->
-                <div class="relative flex w-6/12 md:flex-wrap items-stretch m-5 ml-24">
-                    <input type="text" class="py-5 px-5 placeholder-lime-700 text-lime-600 relative bg-white shadow.md tracking-wide border-lime-500 md:border-1 rounded-full text-sm font-bold w-full pr-10" placeholder="What food will you like to eat?">
-                    <span class="z-10 h-full leading-snug font-normal absolute right-0 text-center bg-transparent rounded text-base items-center justify-center pr-3 py-3">
+                <div class="relative flex sm:w-full md:w-6/12 md:flex-wrap items-stretch m-6 sm:ml-8 md:ml-24">
+                    <input type="text" class="py-5 px-5 placeholder-lime-700 text-lime-600 relative bg-white shadow.md tracking-wide border-lime-500 md:border-1 rounded-full text-sm font-bold w-full pr-10" placeholder="What do you need?">
+                    <span class="z-10 h-full leading-snug font-normal absolute right-0 text-center bg-transparent rounded text-base items-center justify-center pr-3 py-3 hover:shadow-inner transform hover:scale-90 transition ease-in duration-300">
                         <svg class="w-8" xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 16l2.879-2.879m0 0a3 3 0 104.243-4.242 3 3 0 00-4.243 4.242zM21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
                         </svg>
@@ -108,9 +108,9 @@
         </div><!--ends-->
 
         <!-- how to order  -->
-        <div>
+        <div class="px-40">
             <header class="mt-10">
-                <h2 class="text-gray-700 text-center text-5xl font-bold">How to Order</h2>
+                <h2 class="text-gray-700 text-center md:text-5xl font-bold">How to Order</h2>
                 <p class="text-xs text-center font-semibold text-center mt-3">Follow each of this steps to order the menu you want, wait and we are ready to do it for you to be ready to enjoy</p>
             </header>
             <div class="grid lg:grid-cols-5 gap-5 mt-8 ">
@@ -161,10 +161,10 @@
         <!-- how to order ends  -->
 
         <!-- About us -->
-        <div class="grid md:grid-cols-1 mt-24">
-            <div class="flex">
-                <div>
-                    <img src="img/pot2.png" alt="Plate" class="w-full h-32 sm:h-48 object-cover">
+        <div class="grid md:grid-cols-1 mt-24 p-8">
+            <div class="flex items-center">
+                <div class="">
+                    <img src="img/pot2.png" alt="Plate" class="sm:w-24 md:w-48 object-cover w-fit">
                 </div>
                 <div>
                     <h3 class="text-green-500 font-bold">About Us</h3>
@@ -181,96 +181,106 @@
         <!-- About us Ends  -->
 
         <!-- Special Menu  -->
-        <div>
+        <div class="mt-5 bg-gray-100">
             <header>
                 <h1 class="font-bold text-gray-700 text-center text-2xl">Our Special Menu</h1>
-                <div class="flex items-center justify-center mt-3">
-                    <a href="#" class="bg-green-500 text-white border-green-100 shadow-md border-1  ml-6 rounded-full py-2 px-3 text-sm font-bold cursor-pointer tracking-wider transition ease-out duration-500">All categories</a>
-                    <a href="#" class="border-green-100 shadow-md border-1  ml-6 rounded-full py-2 px-3 text-sm font-bold cursor-pointer tracking-wider transition ease-out duration-500">Breakfast</a>
-                    <a href="#" class="border-green-100 shadow-md border-1  ml-6 rounded-full py-2 px-3 text-sm font-bold cursor-pointer tracking-wider transition ease-out duration-500">Brunch</a>
-                    <a href="#" class="border-green-100 shadow-md border-1  ml-6 rounded-full py-2 px-3 text-sm font-bold cursor-pointer tracking-wider transition ease-out duration-500">Lunch</a>
-                    <a href="#" class="border-green-100 shadow-md border-1  ml-6 rounded-full py-2 px-3 text-sm font-bold cursor-pointer tracking-wider transition ease-out duration-500">Dinner</a>
+                <div class="md:flex items-center justify-center mt-3">
+                    <button class="max-w-full bg-green-500 text-white border-green-100 shadow-md border-1 m-1 rounded-full py-2 px-3 md:py-2 md:px-3 text-sm font-bold">All categories</button>
+                    <button class="border-green-100 shadow-md border-1 m-1 rounded-full py-2 px-3 md:py-2 md:px-3 text-sm font-bold">Breakfast</button>
+                    <button class="border-green-100 shadow-md border-1 m-1 rounded-full py-2 px-3 md:py-2 md:px-3 text-sm font-bold">Brunch</button>
+                    <button class="border-green-100 shadow-md border-1 m-1 rounded-full py-2 px-3 md:py-2 md:px-3 text-sm font-bold">Lunch</button>
+                    <button class="border-green-100 shadow-md border-1 m-1 rounded-full py-2 px-3 md:py-2 md:px-3 text-sm font-bold">Dinner</button>
                 </div>
             </header>
-            <div class="grid lg:grid-cols-3 gap-10 mt-8 px-40">
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-10 m-8 md:mt-12 md:px-18 lg:mt-12 lg:px-40">
                 <!-- menu cards  -->
-
-                <div class="hover:shadow-lg bg-white rounded overflow-hidden shadow-md flex flex-wrap justify-center">
-                    <img src="img/pot1.png" alt="Stew" class="max-full h-32 sm:h-48 align-middle border-none object-cover">
+                <div class="hover:shadow-lg bg-white rounded overflow-hidden shadow-lg flex flex-wrap justify-center">
+                    <img src="img/pot1.png" alt="Stew" class="h-28 sm:h-48 border-none object-cover w-fit">
                     <div class="m-4">
-                        <span class="font-bold text-green-400">Black Pepper Crab</span>
-                        <span class="block text-gray-500 text-sm">Lorem, ipsum dolor sit amet id aliquid nisi dicta fugit voluptatem, corporis expedita optio recusandae aperiam accusamus eveniet?</span>
+                        <span class="font-bold text-green-400 mb-2 text-2xl">Black Pepper Crab</span>
+                        <span class="flex justify-start">
+                            <img src="img/rating.png" alt="ratings" class="object-cover w-20">
+                        </span>
+                        <span class="block text-gray-500 text-sm mt-2">Lorem, voluptatem, corporis expedita optio recusandae aperiam accusamus eveniet?</span>
                     </div>
-                    <div class="w-full border-2 border-gray-300"></div>
-
-                    <div class="flex items-center justify-between mx-5 p-4">
-                        <h3 class="font-bold text-gray-400 mr-16">$3.45</h3>
-                        <a href="#" class="bg-green-500 text-white shadow-md rounded-full py-2 px-3 text-sm font-bold cursor-pointer tracking-wider transition ease-out duration-500">Add to Cart</a>
+                    <div class="flex items-center justify-between md:mx-2 p-4 border-t border-gray-200">
+                        <h3 class="font-bold text-gray-400 sm:mr-10 md:mr-16">$3.45</h3>
+                        <button href="#" class="bg-green-500 text-white shadow-md rounded-full py-2 px-3 text-sm font-bold cursor-pointer tracking-wider transition ease-out duration-500">Add to Cart</button>
                     </div>
                 </div>
-                <div class="hover:shadow-lg bg-green-500 rounded overflow-hidden shadow-md flex flex-wrap justify-center">
+                <div class="hover:shadow-lg bg-green-500 rounded overflow-hidden shadow-lg flex flex-wrap justify-center">
                     <img src="img/pot2.png" alt="Stew" class="max-full h-32 sm:h-48 align-middle border-none object-cover">
                     <div class="m-4">
-                        <span class="font-bold text-green-400">Black Pepper Crab</span>
-                        <span class="block text-gray-500 text-sm">Lorem, ipsum dolor sit amet id aliquid nisi dicta fugit voluptatem, corporis expedita optio recusandae aperiam accusamus eveniet?</span>
+                        <span class="font-bold text-white mb-2 text-2xl">Summer Fruit Salad</span>
+                        <span class="flex justify-start">
+                            <img src="img/rating.png" alt="ratings" class="object-cover w-20">
+                        </span>
+                        <span class="block text-white text-sm mt-2">Lorem, voluptatem, corporis expedita optio recusandae aperiam accusamus eveniet?</span>
                     </div>
-                    <div class="w-full border-2 border-gray-300"></div>
-
-                    <div class="flex items-center justify-between mx-5 p-4">
-                        <h3 class="font-bold text-white mr-16">$3.45</h3>
-                        <a href="#" class="bg-white text-green-500 shadow-md rounded-full py-2 px-3 text-sm font-bold cursor-pointer tracking-wider transition ease-out duration-500">Add to Cart</a>
+                    
+                    <div class="flex items-center justify-between md:mx-2 p-4 border-t border-gray-200">
+                        <h3 class="font-bold text-white sm:mr-10 md:mr-16">$3.45</h3>
+                        <button href="#" class="bg-white text-green-500 shadow-md rounded-full py-2 px-3 text-sm font-bold cursor-pointer tracking-wider transition ease-out duration-500">Add to Cart</button>
                     </div>
                 </div>
-                <div class="hover:shadow-lg bg-white rounded overflow-hidden shadow-md flex flex-wrap justify-center">
+                <div class="hover:shadow-lg bg-white rounded overflow-hidden shadow-lg flex flex-wrap justify-center">
                     <img src="img/pot3.png" alt="Stew" class="max-full h-32 sm:h-48 align-middle border-none object-cover">
                     <div class="m-4">
-                        <span class="font-bold text-green-400">Black Pepper Crab</span>
-                        <span class="block text-gray-500 text-sm">Lorem, ipsum dolor sit amet id aliquid nisi dicta fugit voluptatem, corporis expedita optio recusandae aperiam accusamus eveniet?</span>
+                        <span class="font-bold text-green-400 mb-2 text-2xl">Chicken Ramen</span>
+                        <span class="flex justify-start">
+                            <img src="img/rating.png" alt="ratings" class="object-cover w-20">
+                        </span>
+                        <span class="block text-gray-500 text-sm mt-2">Lorem, voluptatem, corporis expedita optio recusandae aperiam accusamus eveniet?</span>
                     </div>
-                    <div class="w-full border-2 border-gray-300"></div>
-
-                    <div class="flex items-center justify-between mx-5 p-4">
-                        <h3 class="font-bold text-gray-400 mr-16">$3.45</h3>
-                        <a href="#" class="bg-green-500 text-white shadow-md rounded-full py-2 px-3 text-sm font-bold cursor-pointer tracking-wider transition ease-out duration-500">Add to Cart</a>
+                    
+                    <div class="flex items-center justify-between md:mx-2 p-4 border-t border-gray-200">
+                        <h3 class="font-bold text-gray-400 sm:mr-10 md:mr-16">$3.45</h3>
+                        <button href="#" class="bg-green-500 text-white shadow-md rounded-full py-2 px-3 text-sm font-bold cursor-pointer tracking-wider transition ease-out duration-500">Add to Cart</button>
                     </div>
                 </div>
-                <div class="hover:shadow-lg bg-white rounded overflow-hidden shadow-md flex flex-wrap justify-center">
+                <div class="hover:shadow-lg bg-white rounded overflow-hidden shadow-lg flex flex-wrap justify-center">
                     <img src="img/pot4.png" alt="Stew" class="max-full h-32 sm:h-48 align-middle border-none object-cover">
                     <div class="m-4">
-                        <span class="font-bold text-green-400">Black Pepper Crab</span>
-                        <span class="block text-gray-500 text-sm">Lorem, ipsum dolor sit amet id aliquid nisi dicta fugit voluptatem, corporis expedita optio recusandae aperiam accusamus eveniet?</span>
+                        <span class="font-bold text-green-400 mb-2 text-2xl">Veggie Rotini</span>
+                        <span class="flex justify-start">
+                            <img src="img/rating.png" alt="ratings" class="object-cover w-20">
+                        </span>
+                        <span class="block text-gray-500 text-sm mt-2">Lorem, voluptatem, corporis expedita optio recusandae aperiam accusamus eveniet?</span>
                     </div>
-                    <div class="w-full border-2 border-gray-300"></div>
-
-                    <div class="flex items-center justify-between mx-5 p-4">
-                        <h3 class="font-bold text-gray-400 mr-16">$3.45</h3>
-                        <a href="#" class="bg-green-500 text-white shadow-md rounded-full py-2 px-3 text-sm font-bold cursor-pointer tracking-wider transition ease-out duration-500">Add to Cart</a>
-                    </div>
-                </div>
-                <div class="hover:shadow-lg bg-white rounded overflow-hidden shadow-md flex flex-wrap justify-center">
-                    <img src="img/pot1.png" alt="Stew" class="max-full h-32 sm:h-48 align-middle border-none object-cover">
-                    <div class="m-4">
-                        <span class="font-bold text-green-400">Black Pepper Crab</span>
-                        <span class="block text-gray-500 text-sm">Lorem, ipsum dolor sit amet id aliquid nisi dicta fugit voluptatem, corporis expedita optio recusandae aperiam accusamus eveniet?</span>
-                    </div>
-                    <div class="w-full border-2 border-gray-300"></div>
-
-                    <div class="flex items-center justify-between mx-5 p-4">
-                        <h3 class="font-bold text-gray-400 mr-16">$3.45</h3>
-                        <a href="#" class="bg-green-500 text-white shadow-md rounded-full py-2 px-3 text-sm font-bold cursor-pointer tracking-wider transition ease-out duration-500">Add to Cart</a>
+                    
+                    <div class="flex items-center justify-between md:mx-2 p-4 border-t border-gray-200">
+                        <h3 class="font-bold text-gray-400 sm:mr-10 md:mr-16">$3.45</h3>
+                        <button href="#" class="bg-green-500 text-white shadow-md rounded-full py-2 px-3 text-sm font-bold cursor-pointer tracking-wider transition ease-out duration-500">Add to Cart</button>
                     </div>
                 </div>
-                <div class="hover:shadow-lg bg-white rounded overflow-hidden shadow-md flex flex-wrap justify-center">
+                <div class="hover:shadow-lg bg-white rounded overflow-hidden shadow-lg flex flex-wrap justify-center">
                     <img src="img/pot1.png" alt="Stew" class="max-full h-32 sm:h-48 align-middle border-none object-cover">
                     <div class="m-4">
-                        <span class="font-bold text-green-400">Black Pepper Crab</span>
-                        <span class="block text-gray-500 text-sm">Lorem, ipsum dolor sit amet id aliquid nisi dicta fugit voluptatem, corporis expedita optio recusandae aperiam accusamus eveniet?</span>
+                        <span class="font-bold text-green-400 mb-2 text-2xl">Meatball Scrumbled Egg</span>
+                        <span class="flex justify-start">
+                            <img src="img/rating.png" alt="ratings" class="object-cover w-20">
+                        </span>
+                        <span class="block text-gray-500 text-sm mt-2">Lorem, voluptatem, corporis expedita optio recusandae aperiam accusamus eveniet?</span>
                     </div>
-                    <div class="w-full border-2 border-gray-300"></div>
-
-                    <div class="flex items-center justify-between mx-5 p-4">
-                        <h3 class="font-bold text-gray-400 mr-16">$3.45</h3>
-                        <a href="#" class="bg-green-500 text-white shadow-md rounded-full py-2 px-3 text-sm font-bold cursor-pointer tracking-wider transition ease-out duration-500">Add to Cart</a>
+                    
+                    <div class="flex items-center justify-between md:mx-2 p-4 border-t border-gray-200">
+                        <h3 class="font-bold text-gray-400 sm:mr-10 md:mr-16">$3.45</h3>
+                        <button href="#" class="bg-green-500 text-white shadow-md rounded-full py-2 px-3 text-sm font-bold cursor-pointer tracking-wider transition ease-out duration-500">Add to Cart</button>
+                    </div>
+                </div>
+                <div class="hover:shadow-lg bg-white rounded overflow-hidden shadow-lg flex flex-wrap justify-center">
+                    <img src="img/pot2.png" alt="Stew" class="max-full h-32 sm:h-48 align-middle border-none object-cover">
+                    <div class="m-4">
+                        <span class="font-bold text-green-400 mb-2 text-2xl">Fruit Salad</span>
+                        <span class="flex justify-start">
+                            <img src="img/rating.png" alt="ratings" class="object-cover w-20">
+                        </span>
+                        <span class="block text-gray-500 text-sm mt-2">Lorem, voluptatem, corporis expedita optio recusandae aperiam accusamus eveniet?</span>
+                    </div>
+                    
+                    <div class="flex items-center justify-between md:mx-2 p-4 border-t border-gray-200">
+                        <h3 class="font-bold text-gray-400 sm:mr-10 md:mr-16">$3.45</h3>
+                        <button href="#" class="bg-green-500 text-white shadow-md rounded-full py-2 px-3 text-sm font-bold cursor-pointer tracking-wider transition ease-out duration-500">Add to Cart</button>
                     </div>
                 </div>
 
